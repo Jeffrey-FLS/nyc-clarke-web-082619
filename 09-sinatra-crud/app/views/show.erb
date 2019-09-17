@@ -1,0 +1,10 @@
+<h1><%= @cereal.name %></h1>
+<img src="<%= @cereal.image_url %>" alt="">
+<p><%= @cereal.rating %> / 5</p>
+
+<hr>
+
+<form action="/cereals/<%= @cereal.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete Cereal</button>
+</form>

@@ -1,0 +1,16 @@
+<h1>Edit Cereal Form</h1>
+
+<form action="/cereals/<%= @cereal.id %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="cereal[name]" value="<%= @cereal.name %>"><br>
+
+  <label for="image">Image Url:</label>
+  <input id="image" type="text" name="cereal[image_url]" value="<%= @cereal.image_url %>"><br>
+
+  <label for="rating">Rating:</label>
+  <input id="rating" type="text" name="cereal[rating]" value="<%= @cereal.rating %>"><br>
+
+  <button type="submit">Update Cereal</button>
+</form>

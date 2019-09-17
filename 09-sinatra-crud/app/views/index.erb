@@ -1,0 +1,8 @@
+<h1>Cereals:</h1>
+<ul>
+<% @cereals.each do |cereal| %>
+  <li>
+    <a href="/cereals/<%= cereal.id %>"><%= cereal.name %></a>
+  </li>
+<% end %>
+</ul>
