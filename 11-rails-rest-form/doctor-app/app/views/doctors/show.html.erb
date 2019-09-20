@@ -1,0 +1,6 @@
+<h1>Doctor Bio:</h1>
+<p><%= @doctor.name %> (<%= @doctor.specialty %>)</p>
+
+
+<%= link_to "Delete Doctor", doctor_path(@doctor), method: :delete %>
+<%= link_to "Edit Doctor", edit_doctor_path(@doctor) %>

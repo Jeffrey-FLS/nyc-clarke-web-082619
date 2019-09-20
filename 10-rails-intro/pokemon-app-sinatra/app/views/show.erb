@@ -1,0 +1,9 @@
+<h1><% @pokemon.name %></h1>
+<p>Type: <%= @pokemon.element_type %> </p>
+<p>Trainer: <%= @pokemon.trainer %></p>
+<p>Weakness: <%= @pokemon.weakness %></p>
+
+<form action="/pokemon/<%= @pokemon.id %>" method="POST">
+ <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete Pokemon</button>
+</form>

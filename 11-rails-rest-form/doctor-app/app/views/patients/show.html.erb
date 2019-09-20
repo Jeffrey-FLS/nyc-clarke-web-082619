@@ -1,0 +1,8 @@
+<h1>patient Bio:</h1>
+<p><%= @patient.name %></p>
+<p>Insurance? <%= @patient.insurance %></p>
+<p>Age: <%= @patient.age %></p>
+
+
+<%= link_to "Delete patient", patient_path(@patient), method: :delete %>
+<%= link_to "Edit patient", edit_patient_path(@patient) %>

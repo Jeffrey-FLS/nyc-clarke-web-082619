@@ -1,0 +1,26 @@
+<%= form_for(@appointment) do |f| %>
+  <%= f.label :doctor_id %>
+  <%= f.collection_select(:doctor_id, @doctors, :id, :name_and_specialty) %>
+  <!--
+  <select name="appointment[doctor_id]">
+  <%# @doctors.each do |d| %>
+    <option value="<%# d.id %>"><%# d.name %></option>
+  <%# end %>
+  </select>
+  -->
+
+  <%= f.label :patient_id %>
+  <%= f.collection_select(:patient_id, @patients, :id, :name) %>
+  <!--
+  <select name="appointment[patient_id]">
+  <%# @patients.each do |p| %>
+    <option value="<%# p.id %>"><%# p.name %></option>
+  <%# end %>
+  </select>
+  -->
+
+  <%= f.label :illness %>
+  <%= f.text_field :illness %>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,16 @@
+<%= form_for @doctor do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :specialty %>
+  <%= f.text_field :specialty %>
+
+  <%= f.submit %>
+<% end %>
+
+
+<%# form_tag(doctors_path) do %>
+  <%# text_field_tag :"doctor[name]" %>
+  <%# text_field_tag :"doctor[specialty]" %>
+  <%# submit_tag "create doctor" %>
+<%# end %>
