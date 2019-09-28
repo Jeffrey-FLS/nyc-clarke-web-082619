@@ -20,8 +20,13 @@ class DoctorsController < ApplicationController
   end
 
   def create
-    @doctor = Doctor.create(doctor_params)
-    redirect_to doctor_path(@doctor)  #"/doctors/#{@doctor.id}"
+    @doctor = Doctor.new(doctor_params)
+    if @doctor.save
+      redirect_to doctor_path(@doctor)  #"/doctors/#{@doctor.id}"
+    else
+      flash[:errors] = @doctor.errors.full_messages
+      redirect_to new_doctor_path
+    end
   end
 
   def edit

@@ -10,7 +10,14 @@ Lets create a RESTful CRUD app using rails (without scaffold!)
 * Route Helpers
 * Talk about controller filters.
 
+## CRUD With Association SWBATs
 * Create a RESTful crud app using rails with associations.
 * collection_select helps us create a dropdown.
   * what does a dropdown look like in plain HTML?
+
+## Rails Validations
+* Set up Server Side Validations using Active Record.
+* Explain what an HTTP Cookie is.
+* Explain what a Flash is.
+* Use flash to display errors to users.
 
