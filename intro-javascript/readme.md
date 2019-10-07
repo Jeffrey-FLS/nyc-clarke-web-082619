@@ -1,4 +1,4 @@
-#SWBATS
+# SWBATS
 
 * Know the differnt JavaScript data types are:
   * Numbers
