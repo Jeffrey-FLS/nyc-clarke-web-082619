@@ -1,0 +1,17 @@
+.hogan-container {
+
+}
+
+.hogan-card {
+  border-top: 1px solid red;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+}
+
+.hogan-img {
+  width: 100%
+}
