@@ -1,6 +1,9 @@
-# Topics
+# JS: Shining Shimmering, Splendid 
+![](https://onceuponatimeinscience.files.wordpress.com/2011/09/magic-carpet-ride.png)
 
-## Key Value assignment shortcut
+## Key Value Assignment Shortcut
+Keeping object definition & access simple by naming variables the same as the corresponding key
+
 ```javascript 
 const name = 'Hermione'
 const house = 'Gryffindor'
@@ -14,7 +17,9 @@ const student = {
 const student2 = { name, house }
 ```
 -------
-## Forms of arrow funcs
+## Forms of Arrow Functions
+A shorter, cleaner way to write functions (especially one liners)
+
 ```javascript
 // without curly brackets, the return is implicit
 const implicitReturn = () => 'hi' 
@@ -28,12 +33,22 @@ const implicitWithParams = (a, b) => a * b
 ```
 -------
 ## Spread Operator
-Can be used on any iterable like below
+Expands any iterable (string, array, object) to its set of items 
+
 ```javascript 
 // Used with an array
 const items = ['This', 'is', 'a', 'sentence'];
 console.log(items) // literally prints the array '['This', 'is', 'a', 'sentence']'
 console.log(...items) // will print 'This is a sentence'
+
+
+// it can be used to combine arrays, without nesting them
+const array = [1, 2];
+const array2 = [...array, 3, 4];
+
+// instead of...
+const array3 = [array, 3, 4];
+
 ```
 ```javascript
 // Used with a string
@@ -60,7 +75,10 @@ console.log(cambioFlatiron) // {'tony': 12, 'caryn': 20, 'yoan': 3, 'steven': 8,
 
 ```
 ---
-## Destructuring assignment
+## Destructuring Assignment
+Unpacks values from an array or object into discrete variables
+
+- Objects
 ```javascript
 const spaceship = {
   pilot: 'elon musk',
@@ -75,34 +93,26 @@ const { pilot, chef, captain } = spaceship
 console.log(pilot) // 'elon musk'
 console.log(chef) // 'gordon ramsay'
 console.log(captain) // undefined
-
-class Person {
-  // props -> { name: 'winfield', favColor: 'red' }
-  constructor(props) {
-    this.name = props.name
-    this.favColor = props.favColor
-  }
-}
-
-//VS
-
-class Person {
-  // props -> { name: 'winfield', favColor: 'red' }
-  constructor({ name, favColor }) {
-    this.name = name
-    this.favColor = favColor
-  }
-}
 ```
+- Arrays 
 ```javascript
 // You can destructure arrays as well. Position in the array is everything! Notice the empty spaces between commas in the destructuring. If those weren't included, we'd get the wrong values for city and zipCode. 
 const address = ['11', 'Broadway', '', 'New York', 'NY', ''];
 const [number, line1, , city, , zipCode] = address;
 
 ```
+- As Parameters
+```javascript
+// If you know the shape of the parameters you're expecting, you can destructure them as well 
+const arrayItems = [['a',1], ['b',2], ['c', 3], ['d', 4], ['e',5]]
+const objectFromArray = arrayItems.map(([key, value]) => { return {[key]:value}})
+```
 -------
 ## Rest Operator
+Represents an indefinite number of arguments as an array (or an object in the case of objects)
+
 ```javascript
+
 const numbers = [1, 2, 3, 4, 5, 6];
 const [ firstNumber, ...restOfTheNumbers ] = numbers; 
 
@@ -113,4 +123,82 @@ function printTwoReturnRest(first, second, ...theRest){
     }
 
 }
+// this function is an example of a recursive function 
 ```
+- As Parameters
+```javascript
+// If you know the shape of the parameters you're expecting, you can destructure them as well 
+const arrayItems = [['a',1,2,3,4], ['b',280,29384], ['c', 3,0], ['d', 4, 'basketball'], ['e',5, 'here ye here ye!']]
+const objectFromArray = arrayItems.map(([key, ...rest]) => { return {[key]:rest}})
+```
+-------
+## Ternary Operator
+Common shortcut for an "if" statement
+
+```javascript
+// Basic Syntax
+// condition ? truthyClause : falsyClause
+
+// so...
+if(!monsterData.name.length === 0) {
+  postNewMonster(monsterData);
+} else {
+  alert('I NEED A NAME 😔')
+}
+
+
+// becomes...
+!monsterData.name.length === 0 ? postNewMonster(monsterData) : alert('I NEED A NAME 😔');
+
+// You can even nest them 😳
+// but make sure you make it easily readable
+const makeDecisions = (is_raining, have_umbrella) => {
+  !is_raining  // if
+    ? console.log('enjoy the sunshine☀️') // if behavior 
+    : have_umbrella  // else if 
+      ? console.log('GO OUTSIDE') // else if behavior
+      : console.log('Good excuse for a movie night') // else behavior
+} 
+
+// check that it works!
+makeDecisions(true, true)
+makeDecisions(true, false)
+makeDecisions(false, false)
+makeDecisions(false, true)
+```
+
+-------
+-------
+-------
+
+# Summary
+- Key Value Assignment Shortcut
+  - keeping object definition & access simple by naming variables the same as the corresponding key
+- Forms of Arrow Functions 
+  - a shorter, cleaner way to write functions (especially one liners)
+  - has implications for binding of methods (OO in JS)
+- Spread Operator
+  - expands any iterable (string, array, object) to its set of items 
+- Destructuring Assignment
+  - unpacks values from an array or object into discrete variables
+- Rest Operator
+  - represents an indefinite number of arguments as an array (or an object in the case of objects)
+- Ternary Operator
+  - common shortcut for an "if" statement
+
+-----
+## External Resources
+
+- [Modern JavaScript](http://www.reactnativeexpress.com/modern_javascript)
+- [Wes Bos Simple Guide for Undertanding Destructuring in JS](https://wesbos.com/destructuring-objects/)
+- [MDN Article on ES6 Object Shorthand Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#New_notations_in_ECMAScript_2015)
+- [MDN Article on ES6 Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- [MDN Article on Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [MDN Article on forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [MDN `Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+### Future Reading
+- [MDN Article on ES6 Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [MDN Article on Callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+- [MDN "Working with Objects"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [MDN Article on `Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
