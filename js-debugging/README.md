@@ -48,4 +48,4 @@ There are more bugs 🦟🐛🕷🐞🐜🐛(and UX fails)... some of which I've
 3. Try to post a new monster. FAIL.
 4. [HARDER... probably] Once you can post a monster... take a look at the JSON and notice some data differences. Fix them.
 5. [HARDER... probably] Once you can post a monster... we can submit monsters without names. Let's not do that. 
-6. [HARDER] If anything happen to make the POST reqeust fail, we don't alert the user. We as developers know to check the console, but the user wouldn't. Improve the UX. 
+6. [HARDER] If anything happens to make the POST request fail, we don't alert the user. We as developers know to check the console, but the user wouldn't. Improve the UX. 

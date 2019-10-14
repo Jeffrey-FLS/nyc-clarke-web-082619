@@ -19,7 +19,8 @@ function getMonsters(pageNum) {
 function createMonsterCard(monster){
     let container = document.createElement('div'),
         name = document.createElement('h2'),
-        age = document.createElement('img'),
+        // QUESTION 1 ANSWER 1 - age was an int element before 
+        age = document.createElement('h4'),
         description = document.createElement('p');
     
     name.innerHTML = `${monster.name}`;
@@ -41,6 +42,8 @@ const createMonsterForm = () => {
     
     form.setAttribute('id','monster-form');
     nameInput.setAttribute('id','name')
+    // QUESTION 5 ANSWER 1 (commented out)
+    // nameInput.setAttribute('required', true);
     nameInput.setAttribute('placeholder', 'name...');
     ageInput.setAttribute('id','age')
     ageInput.setAttribute('placeholder', 'age...');
@@ -59,8 +62,15 @@ const addSubmitEventListener = () => {
     document.querySelector('#monster-form').addEventListener('submit', event => { 
         event.preventDefault();
         console.log('submitted',getFormData());
-        postNewMonster(getFormData());
-        clearForm()
+        const monsterData = getFormData()
+        // QUESTION 5 ANSWER 2 (commented out)
+        // if(!monsterData.name.length === 0) {
+            postNewMonster(monsterData);
+            clearForm()
+        // }
+        // else {
+        //     alert('I NEED A NAME 😔')
+        // }
     })
 }
 
@@ -68,27 +78,40 @@ const getFormData = () => {
     let name = document.querySelector('#name'),
         age = document.querySelector('#age'),
         description = document.querySelector('#description');
-
+    // QUESTION 5 ANSWER 3 
+    if(name.value === ""){
+        alert ('CANT BE EMPTY')
+    } else {
         return{
             name: name.value,
-            age: age.value, 
+            // QUESTION 4 ANSWER 1
+            // we also looked at parseInt, but that returns an int instead of a float
+            age: parseFloat(age.value), 
             description: description.value
         }
+    }
+        
 }
 
 function postNewMonster(monsterObj){
-    let url = URL_PREFIX + `/monsters`,
+    // QUESTION 3 ANSWER 1 - before it was '/monsters' which cause there
+    // to be two slashes - and the request to fail
+    let url = URL_PREFIX + `monsters`,
         requestOptions = {
             method: 'POST',
             headers:{
-                'Content-type':'application/json',
-                Accept:'application/json'
+                'Content-Type':'application/json',
+                'Accept':'application/json'
             },
             body:JSON.stringify(monsterObj)};
             
     fetch(url, requestOptions)
         .then(response => response.json())
-        .then(data => console.log('new monster', data)) 
+        .then(data => console.log('new monster', data))
+        // QUESTION 6 PROMISE ERROR HANDLING
+        // .catch(err => {
+        //     alert('AYO USER THAT FAILED. WASNT YOUR FAULT BRO.')
+        // }) 
 }
 
 const clearForm = () => { document.querySelector('#monster-form').reset() }
@@ -107,9 +130,14 @@ const setPageNum = (page) => {
 }
 const pageUp = () => { page++; getMonsters(page); setPageNum(page) }
 const pageDown = () => {
+    // QUESTION 2 ANSWER 1
+    if(page > 1) {
         page--; 
         getMonsters(page);
         setPageNum(page)
+    } else {
+        alert('No monsters there homie')
+    }
 }
 
 const init = () => {
