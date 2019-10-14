@@ -40,12 +40,15 @@ const createMonsterForm = () => {
         submit = document.createElement('button');
     
     form.setAttribute('id','monster-form');
-    nameInput.setAttribute('id','name').setAttribute('placeholder', 'name...');
-    ageInput.setAttribute('id','age').setAttribute('placeholder', 'age...');
-    descriptionInput.setAttribute('id','description').setAttribute('placeholder', 'description...');
+    nameInput.setAttribute('id','name')
+    nameInput.setAttribute('placeholder', 'name...');
+    ageInput.setAttribute('id','age')
+    ageInput.setAttribute('placeholder', 'age...');
+    descriptionInput.setAttribute('id','description')
+    descriptionInput.setAttribute('placeholder', 'description...');
     submit.innerHTML = 'Create';
 
-    form.appendChild(b).appendChild(c).appendChild(d).appendChild(e); 
+    [nameInput, ageInput, descriptionInput, submit].forEach(element => form.appendChild(element))
 
 
     document.getElementById('create-monster').appendChild(form);

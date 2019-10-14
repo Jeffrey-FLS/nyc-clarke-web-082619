@@ -1,14 +1,21 @@
 # Squashing Bugs in JS
 
+## Agenda
+- Intro to topics & techniques you can use
+- Demo debugging in Monster app
+- Pair practice debugging in Monster app
+- Review practice
+- (Time permitting) Live debug some real 🐛s you're having
+
 ## Topics / Techniques
 
 ### Ones we'll use today
-- console.log
-- debugger
+- console.log --> check values
+    - console.dir
+    - console.table
+- debugger --> look at a function under the hood
     - debug(funcName)
     - monitor(funcName)
-- console.dir
-- console.table
 - finding DOM elements by CSS
 
 ### Ones you should know exist for the future 
