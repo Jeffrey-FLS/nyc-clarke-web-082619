@@ -1,10 +1,10 @@
 # JS: Shining Shimmering, Splendid 
-![](https://onceuponatimeinscience.files.wordpress.com/2011/09/magic-carpet-ride.png)
+![](https://media2.giphy.com/media/DCrq12xnZDmzS/source.gif)
 
 ## Key Value Assignment Shortcut
 Keeping object definition & access simple by naming variables the same as the corresponding key
 
-```javascript 
+```js 
 const name = 'Hermione'
 const house = 'Gryffindor'
 
@@ -20,7 +20,7 @@ const student2 = { name, house }
 ## Forms of Arrow Functions
 A shorter, cleaner way to write functions (especially one liners)
 
-```javascript
+```js
 // without curly brackets, the return is implicit
 const implicitReturn = () => 'hi' 
 // with curly brackets you need to explicitly return 
@@ -35,11 +35,11 @@ const implicitWithParams = (a, b) => a * b
 ## Spread Operator
 Expands any iterable (string, array, object) to its set of items 
 
-```javascript 
+```js 
 // Used with an array
 const items = ['This', 'is', 'a', 'sentence'];
-console.log(items) // literally prints the array '['This', 'is', 'a', 'sentence']'
-console.log(...items) // will print 'This is a sentence'
+console.log(items) 
+console.log(...items)
 
 
 // it can be used to combine arrays, without nesting them
@@ -50,23 +50,23 @@ const array2 = [...array, 3, 4];
 const array3 = [array, 3, 4];
 
 ```
-```javascript
+```js
 // Used with a string
 const flatiron = 'FLATIRON'; 
 const characters = [ ...flatiron ];  // ['F','L','A','T','I','R','O','N' ]
 ```
-```javascript
+```js
 // Used with an object - mostly for copying objects
 const movie1 = {'year': 2018, 'title': 'Joker' } 
-const movie2 = {...movie1} // {'year': 2018, 'title': 'Joker' }
+const movie2 = {...movie1} 
 
 movie1.title = 'Abominable'
 
-movie1 // {'year': 2018, 'title': 'Abominable' }
-movie2 // {'year': 2018, 'title': 'Joker' }
+movie1
+movie2 
 
 // You can also combine objects this way
-const cambioClarke = {'tony': 12, 'caryn': 20, 'yoan': 3}
+const cambioClarke = {'tony': 12, 'caryn': 20, 'yoan': 3, 'sebastian': 47}
 const cambio2nd = {'steven': 8, 'tashawn': 15}
 
 const cambioFlatiron = {...cambioClarke, ...cambio2nd, 'evans': 6}
@@ -79,12 +79,19 @@ console.log(cambioFlatiron) // {'tony': 12, 'caryn': 20, 'yoan': 3, 'steven': 8,
 Unpacks values from an array or object into discrete variables
 
 - Objects
-```javascript
+```js
 const spaceship = {
+  name: 'rocket power',
   pilot: 'elon musk',
   guidance: 'marc zucc',
   chef: 'gordon ramsay'
 }
+
+function printSpaceShip(ship){
+  console.log(`Welcome aboard the ${ship.name}!`)
+  console.log(`Today your pilot will be ${ship.pilot} and you'll be served delicious meals by ${ship.chef}`)
+}
+
 /* from the object spaceship,
 please pull out the VALUES stored at
 pilot and chef */
@@ -93,16 +100,22 @@ const { pilot, chef, captain } = spaceship
 console.log(pilot) // 'elon musk'
 console.log(chef) // 'gordon ramsay'
 console.log(captain) // undefined
+
+
+function printSpaceShip(ship){
+  console.log(`Welcome aboard the ${ship.name}!`)
+  console.log(`Today your pilot will be ${ship.pilot} and you'll be served delicious meals by ${ship.chef}`)
+}
 ```
 - Arrays 
-```javascript
+```js
 // You can destructure arrays as well. Position in the array is everything! Notice the empty spaces between commas in the destructuring. If those weren't included, we'd get the wrong values for city and zipCode. 
 const address = ['11', 'Broadway', '', 'New York', 'NY', ''];
 const [number, line1, , city, , zipCode] = address;
 
 ```
 - As Parameters
-```javascript
+```js
 // If you know the shape of the parameters you're expecting, you can destructure them as well 
 const arrayItems = [['a',1], ['b',2], ['c', 3], ['d', 4], ['e',5]]
 const objectFromArray = arrayItems.map(([key, value]) => { return {[key]:value}})
@@ -111,7 +124,7 @@ const objectFromArray = arrayItems.map(([key, value]) => { return {[key]:value}}
 ## Rest Operator
 Represents an indefinite number of arguments as an array (or an object in the case of objects)
 
-```javascript
+```js
 
 const numbers = [1, 2, 3, 4, 5, 6];
 const [ firstNumber, ...restOfTheNumbers ] = numbers; 
@@ -124,9 +137,12 @@ function printTwoReturnRest(first, second, ...theRest){
 
 }
 // this function is an example of a recursive function 
+
+// remember this? cambioFlatiron = {...cambioClarke, ...cambio2nd, 'evans': 6}
+// we can use destructuring and the rest operator to grab everyone except one of us, say if we're on vacation
 ```
 - As Parameters
-```javascript
+```js
 // If you know the shape of the parameters you're expecting, you can destructure them as well 
 const arrayItems = [['a',1,2,3,4], ['b',280,29384], ['c', 3,0], ['d', 4, 'basketball'], ['e',5, 'here ye here ye!']]
 const objectFromArray = arrayItems.map(([key, ...rest]) => { return {[key]:rest}})
@@ -135,7 +151,7 @@ const objectFromArray = arrayItems.map(([key, ...rest]) => { return {[key]:rest}
 ## Ternary Operator
 Common shortcut for an "if" statement
 
-```javascript
+```js
 // Basic Syntax
 // condition ? truthyClause : falsyClause
 
@@ -166,7 +182,34 @@ makeDecisions(true, false)
 makeDecisions(false, false)
 makeDecisions(false, true)
 ```
+-------
+## Let vs. Var
+Let is block scoped and var is function scoped
 
+```js
+function createBoardLet(rowNum, colNum){
+    let arr1 = []
+    for(let row=0; row <rowNum; row++){
+        arr1.push([])
+        for(let col=0; col <colNum; col++){
+            arr1[row].push(col)
+        }
+    }
+    console.log(`arr1 --->`, arr1, '\n')
+    console.log(`arr1 has ${row} rows and ${col} columns --> \n`, arr1)
+}
+
+function createBoardVar(rowNum, colNum){
+    var arr2 = []
+    for(var row=0; row <rowNum; row++){
+        arr2.push([])
+        for(var col=0; col <colNum; col++){
+            arr2[row].push(col)
+        }
+    }
+    console.log(`arr2 has ${row} rows and ${col} columns --> \n`, arr2)
+}
+```
 -------
 -------
 -------
@@ -189,7 +232,7 @@ makeDecisions(false, true)
 -----
 ## External Resources
 
-- [Modern JavaScript](http://www.reactnativeexpress.com/modern_javascript)
+- [Modern Javascript](http://www.reactnativeexpress.com/modern_javascript)
 - [Wes Bos Simple Guide for Undertanding Destructuring in JS](https://wesbos.com/destructuring-objects/)
 - [MDN Article on ES6 Object Shorthand Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#New_notations_in_ECMAScript_2015)
 - [MDN Article on ES6 Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
@@ -202,3 +245,8 @@ makeDecisions(false, true)
 - [MDN Article on Callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 - [MDN "Working with Objects"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 - [MDN Article on `Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+
+
+
+PARKING LOT 
+- arrow funcs in reduce 

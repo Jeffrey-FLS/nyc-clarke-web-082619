@@ -3,8 +3,23 @@
  * There are multiple techniques you could with each
  * Ask your instructor for how you will be grouped and answer each challenge
  * Use the techniques from the README
+ * 
+ * RULES:
+ * 1. You must switch the scribe in your group after every challenge 
+ *    Do not repeat until everyone has written
+ * 2. You only need to write the relevant part(s) of the code
+ * 3. You'll be given partial credit if the target technique was not used 
  */
 
+
+
+
+
+
+
+
+
+ 
 
 /***************** CHALLENGE 1 *****************/
 
@@ -40,7 +55,6 @@ function renderSinglePokemon(pokemon) {
 
 
 
-
 /***************** CHALLENGE 2 *****************/
 // this is NOT the whole function 
 function addNewPokemon(){
@@ -68,6 +82,8 @@ console.log(addNewPokemon())
 console.log('******************************\n')
 
 
+
+
 /***************** CHALLENGE 3 *****************/
 function fizzBuzzSingle(num){
     /** if multiple of 3 print fizz, if multiple of 5 print buzz, if both fizzbuzz */
@@ -90,6 +106,7 @@ fizzBuzzSingle(12)
 fizzBuzzSingle(13)
 fizzBuzzSingle(15)
 console.log('******************************\n')
+
 
 
 /***************** CHALLENGE 4 *****************/
@@ -126,15 +143,26 @@ console.log('******************************\n')
 const birthdays= [
     [1931, 9, 09],
     [1956, 7, 16],
-    [1982, 3, 25],
-    [1988, 6, 11]
+    [1982, 3, 25, 14, 12, 07],
+    [1988, 6, 11],
+    [2006, 1, 05, 07, 14, 15]
 ]
 
 // REFERENCE
-// new Date(year, month, day)
+// new Date(year, month, day, hours, minutes, seconds, milliseconds)
 
 const jsDateBdays = birthdays.map(function([year, month, day]) {return new Date(year, month, day)})
 
 console.log('********** PROBLEM 5 **********\n')
 console.log(jsDateBdays)
 console.log('******************************\n')
+
+
+
+
+// REFERENCE FROM LECTURE
+// const name = () => console.log('yo'),
+//     sign = () => console.log('gemini');
+
+// name()
+// sign()
