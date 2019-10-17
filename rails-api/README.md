@@ -13,6 +13,7 @@
   * However, now, we return JSON instead of HTML.
 
 ### Serializers
+Is really just a way for us to configure the shape of our JSON response outside of the controller.
   * [Active Model Serializer](https://github.com/rails-api/active_model_serializers)
   * [Fast JSON API](https://github.com/Netflix/fast_jsonapi)
   * [jBuilder](https://github.com/rails/jbuilder)
