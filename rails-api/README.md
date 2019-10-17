@@ -6,7 +6,7 @@
 
 ### Routes
   * We still have to configure routes
-  * we can name space our routes.
+  * we can namespace our routes.
 
 ### Controller
   * We still manipulate/interact with the models as we need.
