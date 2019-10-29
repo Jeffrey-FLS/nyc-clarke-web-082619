@@ -1,0 +1,195 @@
+{"wrestlers": [ 
+    {
+        "img": "https://www.tvovermind.com/wp-content/uploads/2018/07/Ric-Flair.jpg",
+        "name": "Rick Flare",
+        "age": "80",
+        "gender": "Male",
+        "match": "96",
+        "bio": "Woooooo"
+    }, 
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoN2IGKaLzr4QGavbBenBdzaGTyjju0iGBHQYbQy161HtCnhv&s",
+        "name": "Macho Man Randy Savage",
+        "age": "77",
+        "gender": "Male",
+        "match": "95",
+        "bio": "Ohhhh yeaaaaahhhhhh"
+    },
+    {
+        "img": "https://ca.slack-edge.com/T02MD9XTF-UMC62QVAM-019eb6bf04b1-512",
+        "name": "Jeff Musselman",
+        "age": "800",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Pizza!!"
+    },
+    {
+        "img": "https://pbs.twimg.com/media/D5awFQ2UYAAkKnD.jpg",
+        "name": "Chyna",
+        "age": "49",
+        "gender": "Female",
+        "match": "77",
+        "bio": "Everyone deserves to be in the Hall of Fame for their contributions, so why shouldn't I?"
+    }, 
+    {
+        "img": "https://i5.walmartimages.com/dfw/4ff9c6c9-e743/k2-_4283fdc9-d7b8-4ee4-81ee-d265bc8d6d54.v1.jpg?odnWidth=672&odnHeight=672&odnBg=ffffff",
+        "name": "Ronda Rousey",
+        "age": "32",
+        "gender": "Female",
+        "match": "82",
+        "bio": "If you can't dream big, ridiculous dreams, what's the point in dreaming at all?"
+    },
+    {
+        "img": "https://fsmedia.imgix.net/91/46/6a/7b/f142/4b54/93cf/e2f6fca20a0a/dwayne-the-rock-johnson-net-worthjpg.jpeg?rect=12%2C0%2C1000%2C500&auto=format%2Ccompress&dpr=2&w=650",
+        "name": "The Rock",
+        "age": "47",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Success isn't always about 'Greatness', it's about consistency. Consistent, hard work gains success. Greatness will come."
+    },
+    {
+        "img": "https://i.ytimg.com/vi/8ubWi1XuPTc/maxresdefault.jpg",
+        "name": "John Cena",
+        "age": "42",
+        "gender": "Male",
+        "match": "17",
+        "bio": "I was very unique as a child, dressed a certain way, acted a certain way, didn't fit in with everybody. So I immediately got picked on, especially around the age of 12 and 13, when you start going to junior high and start mingling with the older kids. To counteract that, strictly for self-defense, I wanted to get bigger."
+    }, 
+    {
+        "img": "https://i.ytimg.com/vi/UT5xcA37XKQ/maxresdefault.jpg",
+        "name": "Stephanie McMahon",
+        "age": "43",
+        "gender": "Female",
+        "match": "58",
+        "bio": "If there's anyone who makes you feel badly about yourself or anything that's bringing you down, you don't need it in your life. Negativity begets negativity, but positivity begets positivity."
+    },
+    {
+        "img": "https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY3Mzc4ODU4MDMzODE3Mzg5/kofi-kingston-wwe-smackdown-interview.jpg",
+        "name": "Kofi Kingston",
+        "age": "38",
+        "gender": "Male",
+        "match": "82",
+        "bio": "Representation is so important. To be able to have people that look like us, to be able to look at the screen and see that it’s possible to do great things, and you know, even just people in general, who have struggled, that’s what it has been for me for the past 11 years."
+    },
+    {
+        "img": "https://pbs.twimg.com/media/D5awFQ2UYAAkKnD.jpg",
+        "name": "Chyna",
+        "age": "49",
+        "gender": "Female",
+        "match": "77",
+        "bio": "Everyone deserves to be in the Hall of Fame for their contributions, so why shouldn't I?"
+    }, 
+    {
+        "img": "https://i5.walmartimages.com/dfw/4ff9c6c9-e743/k2-_4283fdc9-d7b8-4ee4-81ee-d265bc8d6d54.v1.jpg?odnWidth=672&odnHeight=672&odnBg=ffffff",
+        "name": "Ronda Rousey",
+        "age": "32",
+        "gender": "Female",
+        "match": "82",
+        "bio": "If you can't dream big, ridiculous dreams, what's the point in dreaming at all?"
+    },
+    {
+        "img": "https://fsmedia.imgix.net/91/46/6a/7b/f142/4b54/93cf/e2f6fca20a0a/dwayne-the-rock-johnson-net-worthjpg.jpeg?rect=12%2C0%2C1000%2C500&auto=format%2Ccompress&dpr=2&w=650",
+        "name": "The Rock",
+        "age": "47",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Success isn't always about 'Greatness', it's about consistency. Consistent, hard work gains success. Greatness will come."
+    },
+    {
+        "img": "https://www.tvovermind.com/wp-content/uploads/2018/07/Ric-Flair.jpg",
+        "name": "Rick Flare",
+        "age": "80",
+        "gender": "Male",
+        "match": "96",
+        "bio": "Woooooo"
+    }, 
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoN2IGKaLzr4QGavbBenBdzaGTyjju0iGBHQYbQy161HtCnhv&s",
+        "name": "Macho Man Randy Savage",
+        "age": "77",
+        "gender": "Male",
+        "match": "95",
+        "bio": "Ohhhh yeaaaaahhhhhh"
+    },
+    {
+        "img": "https://ca.slack-edge.com/T02MD9XTF-UMC62QVAM-019eb6bf04b1-512",
+        "name": "Jeff Musselman",
+        "age": "800",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Pizza!!"
+    },
+    {
+        "img": "https://pbs.twimg.com/media/D5awFQ2UYAAkKnD.jpg",
+        "name": "Chyna",
+        "age": "49",
+        "gender": "Female",
+        "match": "77",
+        "bio": "Everyone deserves to be in the Hall of Fame for their contributions, so why shouldn't I?"
+    }, 
+    {
+        "img": "https://i5.walmartimages.com/dfw/4ff9c6c9-e743/k2-_4283fdc9-d7b8-4ee4-81ee-d265bc8d6d54.v1.jpg?odnWidth=672&odnHeight=672&odnBg=ffffff",
+        "name": "Ronda Rousey",
+        "age": "32",
+        "gender": "Female",
+        "match": "82",
+        "bio": "If you can't dream big, ridiculous dreams, what's the point in dreaming at all?"
+    },
+    {
+        "img": "https://fsmedia.imgix.net/91/46/6a/7b/f142/4b54/93cf/e2f6fca20a0a/dwayne-the-rock-johnson-net-worthjpg.jpeg?rect=12%2C0%2C1000%2C500&auto=format%2Ccompress&dpr=2&w=650",
+        "name": "The Rock",
+        "age": "47",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Success isn't always about 'Greatness', it's about consistency. Consistent, hard work gains success. Greatness will come."
+    },
+    {
+        "img": "https://www.tvovermind.com/wp-content/uploads/2018/07/Ric-Flair.jpg",
+        "name": "Rick Flare",
+        "age": "80",
+        "gender": "Male",
+        "match": "96",
+        "bio": "Woooooo"
+    }, 
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoN2IGKaLzr4QGavbBenBdzaGTyjju0iGBHQYbQy161HtCnhv&s",
+        "name": "Macho Man Randy Savage",
+        "age": "77",
+        "gender": "Male",
+        "match": "95",
+        "bio": "Ohhhh yeaaaaahhhhhh"
+    },
+    {
+        "img": "https://ca.slack-edge.com/T02MD9XTF-UMC62QVAM-019eb6bf04b1-512",
+        "name": "Jeff Musselman",
+        "age": "800",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Pizza!!"
+    },
+    {
+        "img": "https://pbs.twimg.com/media/D5awFQ2UYAAkKnD.jpg",
+        "name": "Chyna",
+        "age": "49",
+        "gender": "Female",
+        "match": "77",
+        "bio": "Everyone deserves to be in the Hall of Fame for their contributions, so why shouldn't I?"
+    }, 
+    {
+        "img": "https://i5.walmartimages.com/dfw/4ff9c6c9-e743/k2-_4283fdc9-d7b8-4ee4-81ee-d265bc8d6d54.v1.jpg?odnWidth=672&odnHeight=672&odnBg=ffffff",
+        "name": "Ronda Rousey",
+        "age": "32",
+        "gender": "Female",
+        "match": "82",
+        "bio": "If you can't dream big, ridiculous dreams, what's the point in dreaming at all?"
+    },
+    {
+        "img": "https://fsmedia.imgix.net/91/46/6a/7b/f142/4b54/93cf/e2f6fca20a0a/dwayne-the-rock-johnson-net-worthjpg.jpeg?rect=12%2C0%2C1000%2C500&auto=format%2Ccompress&dpr=2&w=650",
+        "name": "The Rock",
+        "age": "47",
+        "gender": "Male",
+        "match": "47",
+        "bio": "Success isn't always about 'Greatness', it's about consistency. Consistent, hard work gains success. Greatness will come."
+    }
+]
+}
