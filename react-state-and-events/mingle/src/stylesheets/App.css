@@ -4,8 +4,6 @@
 }
 
 
-
-
 .main-container {
   display: flex;
   flex-direction: row;
@@ -77,7 +75,7 @@ img.photo-card-view {
 .wrestler-name.photo-view {
   position: relative;
   bottom: 15%;
-  background: aliceblue;
+  background-color: whitesmoke;
   padding: 10px 0px;
   width: 100%;
 }
@@ -99,6 +97,13 @@ img.photo-card-view {
   flex-basis: 75%;
 }
 
+.new-wrestler-form {
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
 
 
 /* 
