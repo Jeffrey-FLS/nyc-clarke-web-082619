@@ -13,10 +13,10 @@ layout: post
 
 ### React Component Lifecycle
 Can be separated into three categories:
-* Mounting
-* Updating
-* Unmounting
-* Error Handling
+* Mounting -> A component is created and inserted into the DOM.
+* Updating -> When a component is being re-rendered.
+* Unmounting -> When a component is removed from the DOM.
+* Error Handling -> Handles errors
 
 ## Resources
 * [React Docs](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
