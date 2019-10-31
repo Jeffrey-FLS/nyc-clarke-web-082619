@@ -1,4 +1,4 @@
-#SWBATS
+# SWBATS
 
 * Know the differnt JavaScript data types are:
   * Numbers
@@ -9,8 +9,8 @@
   * Symbol
 
   * Objects
-  * Arrays**
-  * functions
+  * Arrays** (really just a specialized object)
+  * functions** (also just an object, a very special one... but still just an object)
 
 * Create and use functions in JavaScript.
 * Talk about what the DOM (Document Object Model)

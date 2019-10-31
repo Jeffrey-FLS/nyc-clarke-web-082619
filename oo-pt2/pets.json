@@ -1,0 +1,52 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "species": "dragon",
+      "name": "Drogon",
+      "age": "5",
+      "popularity": 4,
+      "comment": "Issa brat. Breathes fire."
+    },
+    {
+      "id": 2,
+      "species": "Cat",
+      "name": "Mojo",
+      "age": "12",
+      "popularity": 11,
+      "comment": "Snuggle monster. Will throw his body into your face demanding snuggles at 5am."
+    },
+    {
+      "id": 3,
+      "species": "Pikachu",
+      "name": "Pika Pika",
+      "age": "5000",
+      "popularity": 50,
+      "comment": "Ash doesn't deserve Pika Pika"
+    },
+    {
+      "name": "Jax",
+      "species": "dog",
+      "age": "5",
+      "comment": "he's vv fat ",
+      "popularity": 0,
+      "id": 4
+    },
+    {
+      "name": "noodle",
+      "species": "SNAKE",
+      "age": "3",
+      "comment": "escapes a lot",
+      "popularity": 0,
+      "id": 5
+    },
+    {
+      "name": "spongebob",
+      "species": "turtle",
+      "age": "120000000",
+      "comment": "bites faces",
+      "popularity": 0,
+      "id": 6
+    }
+  ]
+}

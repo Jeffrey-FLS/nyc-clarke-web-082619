@@ -1,0 +1,18 @@
+img.wrestler-pic {
+    width: 45%;
+    object-fit: cover;
+    height: 30%;
+}
+
+.wrestler-card {
+    flex-basis: 45%;
+    border-radius: 2%;
+    border: 2px solid darkgrey;
+    padding: 9px 4px;
+    margin: 5px 2px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+}

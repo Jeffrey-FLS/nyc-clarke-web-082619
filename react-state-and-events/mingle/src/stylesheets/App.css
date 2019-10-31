@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  font-family: monospace;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: -webkit-fill-available;
+  padding-top: 10px;
+}
+
+
+.nav-link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  background: royalblue;
+  margin: 1px 1px;
+}
+
+.search-bar{
+  flex-basis: 25%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+img.wrestler-pic {
+  width: 45%;
+  object-fit: cover;
+  height: 30%;
+}
+
+img.photo-card-view {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.wrestler-card {
+  flex-basis: 45%;
+  width: 45%;
+  border-radius: 2%;
+  border: 2px solid darkgrey;
+  padding: 9px 4px;
+  margin: 5px 2px;
+  background-color: whitesmoke;
+}
+
+.wrestler-card.photo-view {
+  border: none;
+  margin-bottom: 50px;
+  padding: 0px 0px;
+}
+
+.wrestler-name {
+  font-size: 1.5em;
+  color: darkblue;
+}
+
+.wrestler-name.photo-view {
+  position: relative;
+  bottom: 15%;
+  background-color: whitesmoke;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrestler-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+
+.user-container {
+  flex-basis: 75%;
+}
+
+.new-wrestler-form {
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+
+
+/* 
+.App-logo {
+  height: 40vmin;
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+/* 
+.App-link {
+  color: #09d3ac;
+} */

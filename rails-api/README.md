@@ -6,13 +6,14 @@
 
 ### Routes
   * We still have to configure routes
-  * we can name space our routes.
+  * we can namespace our routes.
 
 ### Controller
   * We still manipulate/interact with the models as we need.
   * However, now, we return JSON instead of HTML.
 
 ### Serializers
+Is really just a way for us to configure the shape of our JSON response outside of the controller. Choose from these flavors to manage your JSON response:
   * [Active Model Serializer](https://github.com/rails-api/active_model_serializers)
   * [Fast JSON API](https://github.com/Netflix/fast_jsonapi)
   * [jBuilder](https://github.com/rails/jbuilder)

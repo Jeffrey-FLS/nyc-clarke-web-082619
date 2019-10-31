@@ -1,0 +1,3 @@
+## SWBATs...
+- [] explain how OO applies to the frontend
+- [] abstract out elements of their frontend to classes 

@@ -1,0 +1,17 @@
+.interest {
+    display: block;
+    position: relative;
+    left: 60vw;
+    top: -100px;
+}
+
+.pets-container {
+    margin: 20px;
+    border: solid blue 2px;
+    padding: 10px;
+    text-align: left;
+}
+
+body {
+    text-align: center;
+}
