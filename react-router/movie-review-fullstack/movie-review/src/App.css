@@ -70,3 +70,15 @@
 .review-box {
   margin: 14px 0px;
 }
+
+form.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  left: 40vw;
+  position: relative;
+  top: 20px;
+  background-color: aliceblue;
+  height: 100px;
+  padding: 50px;
+}
