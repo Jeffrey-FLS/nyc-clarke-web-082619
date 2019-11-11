@@ -7,13 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(
+      username: "Tony",
+      password: "123",
+      admin: true
+)
+
+User.create(
       username: "Caryn",
-      password: "123"
+      password: "123",
+      admin: true
 )
 
 User.create(
     username: "Sebastian",
-    password: "123"
+    password: "123",
+    admin: true
 )
 
 17.times do 

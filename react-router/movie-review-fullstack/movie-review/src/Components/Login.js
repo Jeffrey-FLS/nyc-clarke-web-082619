@@ -1,4 +1,5 @@
 import React from 'react';
+import { API_BASE } from '../constants';
 
 class Login extends React.Component{
   state = {
@@ -14,7 +15,8 @@ class Login extends React.Component{
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetch('http://localhost:3001/api/v1/login',{
+
+    fetch(`${API_BASE}/login`,{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,12 +30,11 @@ class Login extends React.Component{
         alert(response.errors)
       } else {
         // we have the user object!!! store somewhere
-        this.props.setUser(response)
+        this.props.setUser(response.user)
+        localStorage.token = response.token
         // move them to main screen  "/movies"
       }
-    }
-      
-    )
+    })
     // if login is successful
     // redirect to "/movies"
 

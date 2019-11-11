@@ -1,24 +1,16 @@
 class Api::V1::UsersController < ApplicationController
-  # def index
-  #   @users = User.all
-
-  #   render json: @users, status: :ok
-  # end
-
-  # def show
-  #   @user = User.find(params[:id])
-
-  #   render json: @user, status: :ok
-  # end
 
   def create
-    user = User.create({username: params[:username], password: params[:password]})
+    user = User.new(
+      username: params[:username],
+      password: params[:password],
+    )
+
     if user.save
-      render json: user, status: :ok
+      token = encode_token(user.id)
+      render json: {user: user, token: token}
     else
-      render json: {errors: user.errors.full_messages[0]}
+      render json: {errors: user.errors.full_messages}
     end
   end
-
-  
 end

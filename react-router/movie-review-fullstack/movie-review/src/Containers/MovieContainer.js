@@ -21,7 +21,7 @@ class MovieContainer extends React.Component {
         <Switch>
           <Route 
             path="/movies/:id"
-            render={(routerProps) => <MoviePage handleBack={this.selectMovie} movies={this.props.movies} {...routerProps}/>}
+            render={(routerProps) => <MoviePage isAdmin={this.props.isAdmin} handleBack={this.selectMovie} movies={this.props.movies} {...routerProps}/>}
           />
           <Route 
               path="/movies"
