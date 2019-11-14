@@ -1,0 +1,16 @@
+/* @font-face {
+    font-family: 'Ostrich Sans';
+    src: local('Ostrich Sans'), url(./fonts/OstrichSans-Heavy.otf) format('opentype');
+  } */
+
+ nav.navbar.navbar-expand.navbar-dark.bg-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Georgia';
+    
+}
+
+.navbar-brand {
+    flex-basis: 90%;
+}

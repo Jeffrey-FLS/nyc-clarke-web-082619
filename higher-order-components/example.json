@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "pet": "Bentley",
+            "photos": [{"source": "https://www.daz3d.com/media/catalog/product/cache/1/image/960x1248/17f82f742ffe127f42dca9de82fb58b1/d/e/demon-dog-hd-for-daz-dog-8-00-main-daz3d.jpg"}],
+            "user": {
+                "first_name": "Sebastian"
+            }
+        }
+    ]
+}
